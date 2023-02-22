@@ -16,7 +16,7 @@ export function Header() {
       <Favorites type="button">Meus Favoritos</Favorites>
       <Input placeholder="Busque pelas opções de pratos" icon={FiSearch} />
       <Order type="button">
-        <img src={receipt} alt="receipt" /> Meu Pedido
+        <img src={receipt} alt="receipt" /> Meu Pedido (0)
       </Order>
       <Logout>
         <img src={SigOut} alt="#" />

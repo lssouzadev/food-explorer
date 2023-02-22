@@ -7,16 +7,18 @@ export const Container = styled.div`
 export const Advertising = styled.main`
   width: 100%;
   height: 632px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
 `
 
 export const Box = styled.div`
-  max-width: 100%;
+  width: 120vh;
   height: 260px;
   background-color: ${({ theme }) => theme.COLORS.BLUE_300};
   color: ${({ theme }) => theme.COLORS.GRAY_100};
-  margin-left: 124px;
-  margin-right: 124px;
-  margin-top: 164px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,6 +31,6 @@ export const Box = styled.div`
   > img {
     position: relative;
     bottom: 75px;
-    right: 10px;
+    right: 56px;
   }
 `
