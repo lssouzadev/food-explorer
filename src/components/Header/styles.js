@@ -6,9 +6,18 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BLUE_700};
   padding-left: 20px;
   display: flex;
+
   align-items: center;
   justify-content: center;
   gap: 2rem;
+`
+export const BoxSize = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1120px;
+  gap: 2rem;
+  flex: none;
 `
 
 export const LogoExplorer = styled.div`
