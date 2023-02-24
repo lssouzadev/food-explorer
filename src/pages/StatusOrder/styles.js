@@ -17,33 +17,34 @@ export const Content = styled.div`
   table {
     margin-top: 34px;
     width: 100%;
-    border-collapse: collapse;
+    border-spacing: 0;
     border: 2px solid ${({ theme }) => theme.COLORS.GRAY_800};
+    background-color: ${({ theme }) => theme.COLORS.BLACK};
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
+    thead th,
+    tbody td {
+      border: 0.1px solid ${({ theme }) => theme.COLORS.GRAY_800};
+    }
     th {
-      border-right: 2px solid ${({ theme }) => theme.COLORS.GRAY_800};
-      border-bottom: 2px solid ${({ theme }) => theme.COLORS.GRAY_800};
-      padding-bottom: 1.31rem;
-      padding-top: 1.31rem;
-      padding-left: 1rem;
-      padding-right: 2.5rem;
+      padding: 1.31rem 2.5rem 1.31rem 1rem;
       text-align: justify;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
       font-size: 15px;
     }
 
     td {
-      border-right: 2px solid ${({ theme }) => theme.COLORS.GRAY_800};
-      border-bottom: 2px solid ${({ theme }) => theme.COLORS.GRAY_800};
-      padding-bottom: 1.1rem;
-      padding-top: 1.1rem;
-      padding-left: 1rem;
-      padding-right: 2.5rem;
+      padding: 1.1rem 2.5rem 1.1rem 1rem;
       text-align: justify;
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_200};
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #${({ theme }) => theme.COLORS.BLACK};
     }
   }
 `
