@@ -13,11 +13,11 @@ import setaDir from '../../../../assets/setaDir.png'
 
 export function ProductMenu({ title }) {
   function avancar() {
-    document.getElementById(title).scrollLeft += 100
+    document.getElementById(title).scrollLeft += 300
   }
 
   function voltar() {
-    document.getElementById(title).scrollLeft -= 100
+    document.getElementById(title).scrollLeft -= 300
   }
   return (
     <Teste>

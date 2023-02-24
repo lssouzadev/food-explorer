@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.footer`
   width: 100%;
   height: 124px;
   background-color: ${({ theme }) => theme.COLORS.BLUE_700};
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0px;
 `
 
 export const Box = styled.div`

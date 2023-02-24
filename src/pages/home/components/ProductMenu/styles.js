@@ -9,7 +9,7 @@ export const Dishes = styled.div`
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
-
+    scroll-behavior: smooth;
     &::-webkit-scrollbar {
       display: none;
     }

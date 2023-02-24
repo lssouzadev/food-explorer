@@ -14,10 +14,9 @@ export const Container = styled.div`
 export const BoxSize = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 1120px;
   gap: 2rem;
-  flex: none;
 `
 
 export const LogoExplorer = styled.div`
@@ -34,7 +33,8 @@ export const LogoExplorer = styled.div`
 `
 export const Favorites = styled.a`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
-  font-size: 1.1rem;
+  font-size: 18px;
+  display: block;
 `
 
 export const Order = styled.button`

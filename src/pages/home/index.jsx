@@ -21,7 +21,9 @@ export function Home() {
         <ProductMenu title="Pratos Principais" />
         <ProductMenu title="Sobremesas" />
       </Content>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </Container>
   )
 }
