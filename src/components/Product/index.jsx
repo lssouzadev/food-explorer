@@ -11,24 +11,25 @@ import addButton from '../../assets/addButton.png'
 import minusButton from '../../assets/minusButton.png'
 import { Button } from '../Button'
 
-function mais() {
-  const atual = document.getElementById('total').value
-  const novo = atual - -1 // Evitando Concatenacoes
-  document.getElementById('total').value = novo
-}
-
-function menos() {
-  const atual = document.getElementById('total').value
-  if (atual > 1) {
-    // evita números negativos
-    const novo = atual - 1
-    document.getElementById('total').value = novo
+export function Product({ id, ...rest }) {
+  function mais() {
+    const atual = document.getElementById(id).value
+    const novo = atual - -1 // Evitando Concatenacoes
+    document.getElementById(id).value =
+      document.getElementById(id).value < 9 ? `0${novo}` : novo
   }
-}
 
-export function Product() {
+  function menos() {
+    const atual = document.getElementById(id).value
+    if (atual > 1) {
+      // evita números negativos
+      const novo = atual - 1
+      document.getElementById(id).value =
+        document.getElementById(id).value <= 10 ? `0${novo}` : novo
+    }
+  }
   return (
-    <Container>
+    <Container {...rest}>
       <FiHeart size={25} />
       <img src={torradas} alt="torradas" />
       <a href="">{'Torradas parma >'}</a>
@@ -39,7 +40,7 @@ export function Product() {
           <ButtonMinus onClick={menos}>
             <img src={minusButton} alt="#" />
           </ButtonMinus>
-          <InputAmount value={1} type="number" id="total" min={1} />
+          <InputAmount defaultValue="01" type="number" id={id} min={1} />
           <ButtonAdd onClick={mais}>
             <img src={addButton} alt="#" />
           </ButtonAdd>

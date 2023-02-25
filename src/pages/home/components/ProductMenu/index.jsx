@@ -11,7 +11,7 @@ import { Product } from '../../../../components/Product'
 import setaEsq from '../../../../assets/setaEsq.png'
 import setaDir from '../../../../assets/setaDir.png'
 
-export function ProductMenu({ title }) {
+export function ProductMenu({ title, ...rest }) {
   function avancar() {
     document.getElementById(title).scrollLeft += 300
   }
@@ -20,7 +20,7 @@ export function ProductMenu({ title }) {
     document.getElementById(title).scrollLeft -= 300
   }
   return (
-    <Teste>
+    <Teste {...rest}>
       <h1>{title}</h1>
       <BoxButton>
         <BoxButtonLeft>
@@ -36,16 +36,16 @@ export function ProductMenu({ title }) {
       </BoxButton>
       <Dishes>
         <div id={title}>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          <Product id={`${title}1`} />
+          <Product id={`${title}2`} />
+          <Product id={`${title}3`} />
+          <Product id={`${title}4`} />
+          <Product id={`${title}5`} />
+          <Product id={`${title}6`} />
+          <Product id={`${title}7`} />
+          <Product id={`${title}8`} />
+          <Product id={`${title}9`} />
+          <Product id={`${title}10`} />
         </div>
       </Dishes>
     </Teste>

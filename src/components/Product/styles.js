@@ -11,7 +11,6 @@ export const Container = styled.div`
   text-align: center;
 
   > svg {
-    background: none;
     color: ${({ theme }) => theme.COLORS.GRAY_300};
     position: relative;
     left: 120px;
