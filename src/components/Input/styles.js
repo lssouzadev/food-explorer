@@ -2,44 +2,27 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 400px;
 
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.COLORS.BLUE_200};
-  color: ${({ theme }) => theme.COLORS.GRAY_300};
 
-  border-radius: 5px;
+  color: ${({ theme }) => theme.COLORS.GRAY_300};
+  background-color: ${({ theme }) => theme.COLORS.BLUE_800};
 
   > input {
-    height: 56px;
+    height: 20px;
     width: 100%;
-
-    padding: 12px;
+    font-size: 16px;
+    padding: 1.5rem 0 1.5rem 1.4rem;
 
     color: ${({ theme }) => theme.COLORS.WHITE};
     background: transparent;
-    border: none;
+    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+    border-radius: 5px;
 
     &::placeholder {
       font-weight: 400;
       font-size: 1rem;
     }
   }
-
-  > svg {
-    margin-left: 16px;
-  }
 `
-
-/* import styled from 'styled-components'
-
-export const Container = styled.input`
-  width: 100vh;
-  height: 48px;
-  background-color: ${({ theme }) => theme.COLORS.BLUE_200};
-  border-radius: 5px;
-  border: solid;
-
- 
-` */

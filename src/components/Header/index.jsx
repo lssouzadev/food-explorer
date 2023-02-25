@@ -6,7 +6,7 @@ import {
   Order,
   Logout,
 } from './styles'
-import { Input } from '../Input'
+import { InputHeader } from './InputHeader'
 import logoExplorer from '../../assets/logo.svg'
 import receipt from '../../assets/receipt.svg'
 import { FiSearch } from 'react-icons/fi'
@@ -22,7 +22,10 @@ export function Header() {
         </LogoExplorer>
 
         <Favorites type="button">Meus Favoritos</Favorites>
-        <Input placeholder="Busque pelas opções de pratos" icon={FiSearch} />
+        <InputHeader
+          placeholder="Busque pelas opções de pratos"
+          icon={FiSearch}
+        />
         <Order type="button">
           <img src={receipt} alt="receipt" /> Meu Pedido (0)
         </Order>
