@@ -4,10 +4,9 @@ export const Container = styled.div`
   width: 100%;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
 
   color: ${({ theme }) => theme.COLORS.GRAY_300};
-  background-color: ${({ theme }) => theme.COLORS.BLUE_800};
 
   > input {
     height: 20px;

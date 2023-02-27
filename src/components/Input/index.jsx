@@ -1,9 +1,11 @@
 import { Container } from './styles'
 
-export function Input({ ...rest }) {
+export function Input({ title, children, ...rest }) {
   return (
     <Container>
-      <input {...rest} />
+      <p>{title}</p>
+      <input {...rest}></input>
+      {children}
     </Container>
   )
 }

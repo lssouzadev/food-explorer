@@ -1,8 +1,9 @@
 import { Container, Content, LogoExplorer, FormSignUp } from './styles'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+
 import logoExplorerLarge from '../../assets/logoExplorerLarger.png'
-export function SignUp() {
+export function SignIn() {
   return (
     <Container>
       <Content>
@@ -12,28 +13,23 @@ export function SignUp() {
         </LogoExplorer>
 
         <FormSignUp>
-          <h1>Crie Sua Conta</h1>
-          <Input
-            title={'Seu Nome'}
-            placeHolder="Exemplo: Maria da Silva"
-            type="text"
-          />
+          <h1>Faça login</h1>
 
           <Input
             title={'Email'}
-            placeHolder="Exemplo: exemplo@exemplo.com.br"
+            placeholder="Exemplo: exemplo@exemplo.com.br"
             type="text"
           />
 
           <Input
             title={'Senha'}
-            placeHolder="No mínimo 6 caracteres"
+            placeholder="No mínimo 6 caracteres"
             type="password"
           />
           <span>
-            <Button title="Criar conta" />
+            <Button title="Entrar" />
           </span>
-          <a>Já tenho uma conta</a>
+          <a>Criar uma conta</a>
         </FormSignUp>
       </Content>
     </Container>
