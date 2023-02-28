@@ -11,6 +11,7 @@ import {
   PaymentCreditBox,
   Order,
   PaymentChecked,
+  OrderFinished,
 } from './styles'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
@@ -20,6 +21,7 @@ import card from '../../assets/creditCard.png'
 import qrcode from '../../assets/qrcode.png'
 import clock from '../../assets/Clock.png'
 import receipt from '../../assets/receipt.svg'
+import forkKnife from '../../assets/forkKnife.png'
 import { Input } from '../../components/Input'
 
 export function MyOrder() {
@@ -120,10 +122,13 @@ export function MyOrder() {
             </form>
           </PaymentCreditBox>
           <PaymentChecked id="checked">
-            {' '}
             <img src={clock} alt="relógio" />
             <p>Pagamento aprovado!</p>
           </PaymentChecked>
+          <OrderFinished>
+            <img src={forkKnife} alt="relógio" />
+            <p>Pedido Entregue!</p>
+          </OrderFinished>
         </Payment>
       </Content>
       <Footer />

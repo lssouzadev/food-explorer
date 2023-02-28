@@ -193,3 +193,22 @@ export const PaymentChecked = styled.div`
     color: ${({ theme }) => theme.COLORS.GRAY_200};
   }
 `
+export const OrderFinished = styled.div`
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: ${({ theme }) => theme.COLORS.GRAY_200};
+  img {
+    width: 128px;
+    height: 128px;
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
+  }
+`
