@@ -7,7 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
 
   color: ${({ theme }) => theme.COLORS.GRAY_300};
-
+  > p {
+    margin-bottom: 8px;
+  }
   > input {
     height: 20px;
     width: 100%;
